@@ -1,0 +1,6 @@
+{
+    "todos": [
+        { "id": 1, "title": "Buy Milk", "done": false, "completeTime": null },
+        { "id": 2, "title": "Buy Food", "done": true, "completeTime": "2022-08-09T09:31:52.911Z" }
+    ]
+}
