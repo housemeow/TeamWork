@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  const todos = require('../db.json')
+  res.json(todos)
 });
 router.get('/:id', function(req, res, next) {
   console.log(req.params.id)
