@@ -4,7 +4,7 @@ $.get('http://localhost:3000/todos').then(data => {
     todos.forEach(todo => {
         let time = ''
         if (todo.time) {
-          time = `${todo.time.getFullYear()}/${todo.time.getMonth()}/${todo.time.getDate()}`
+          time = `${todo.time.getFullYear()}/${todo.time.getMonth() + 1}/${todo.time.getDate()}`
         }
         $('ul').append(`
         <li>
